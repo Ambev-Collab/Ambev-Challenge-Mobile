@@ -56,7 +56,10 @@ const QRCode = () => {
       return
     }
     setScanned(true);
-    alert(`Bar code with type ${e.type} and data ${e.data} has been scanned!`);
+    const url = e.data; 
+    navigation.navigate('Cardapio',{
+      url
+    })
   };
 
   if (hasPermission === null) {

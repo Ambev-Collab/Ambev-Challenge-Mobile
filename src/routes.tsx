@@ -6,6 +6,7 @@ import { AppRoutes } from './app.routes'
 import Login from './pages/Login'
 import Home from './pages/Home'
 import QRCode from './pages/QRCode'
+import Cardapio from './pages/Cardapio'
 
 const AppStack = createStackNavigator()
 
@@ -16,6 +17,7 @@ const Routes = () => {
                 <AppStack.Screen name={ AppRoutes.LOGIN } component={ Login }/>
                 <AppStack.Screen name={ AppRoutes.HOME } component={ Home }/>
                 <AppStack.Screen name={ AppRoutes.QRCODE } component={ QRCode }/>
+                <AppStack.Screen name={ AppRoutes.CARDAPIO } component={ Cardapio }/>
             </AppStack.Navigator>
         </NavigationContainer>
     )
